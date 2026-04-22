@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Zara Brasil</title>
+    <style>
+        header{
+            text-align: center;
+        }
+
+        fieldset{
+            width: 400px;
+            height: 200px;
+        }
+
+        legend{
+            font-size: 24px;
+            text-align: center;
+        }
+
+        /* INPUT DE EMAIL E SENHA */
+        input{
+            width: 300px;
+            height: 25px;
+        }
+
+        /* INPUT DE SUBMIT E RESET = BOTÕES */
+        #botao{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <!-- LOGO -->
+    <header>
+        <br> <br> <br> <br>
+        <a href="./index.html"><img src="./imagens/zara_logo.svg" alt="Logo Zara" width="300px"></a>
+    </header>
+    <br> <br>
+    <main>
+        <section> <!-- FORMULÁRIO | DÚVIDA -->
+        <center> <!-- TAG OBSOLETA -->
+            <form autocomplete="off">
+                <fieldset> <!-- GRADE QUE ENGLOBA O FORMS -->
+                    <legend>Iniciar Sessão</legend> <!-- NOME DA SEÇÃO DO FORMS -->
+                    <br>
+                    <input type="email" placeholder="E-mail" required> <!-- Required torna obrigatório -->
+                    <br> <br>
+                    <input type="password" placeholder="Senha" required>
+                    <br> <br> <br>
+                    <!-- BOTÕES -->
+                    <input type="submit" value="Entrar" id="botao">
+                    <input type="reset" value="Limpar" id="botao">
+                </fieldset>
+            </form>
+        </center>
+    </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras | Zara Brasil</title>
+    <style>
+        header{
+            text-align: center;
+        }
+
+        h1{
+            font-size: 24px;
+        }
+
+        figure{
+            text-align: center;
+        }
+
+        h2{
+            font-size: 20px;
+        }
+
+        legend{
+            font-size: 20px;
+        }
+
+        label{
+            font-size: 18px;
+        }
+
+        #inome, #icep, #iendereco, #itel{
+            height: 20px;
+        }
+
+        pre{
+            text-align: center;
+        }
+
+        #botao{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            height: 25px;
+            width: 150px;
+        }
+
+        footer{
+            background-color: black;
+            text-align: center;
+        }
+
+        p#copy{
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./imagens/zara_logo.svg" alt="Logo Zara" width="80px"></a>
+        <hr>
+    </header>
+    <main>
+        <section><!-- APRESENTAÇÃO DO PRODUTO -->
+            <article> <!-- CARACTERÍSTICAS GERAIS -->
+                <h1>Camisa com bolso bordado ZW Collection</h1>
+                <figure>
+                    <img src="./imagens/mulheres/blusas/bolso_bordado.jpg" alt="Camisa marrom com bolso bordado">
+                    <img src="./imagens/mulheres/blusas/bolso_bordado_dois.jpg" alt="Camisa marrom com bolso bordado" width="375px">
+                </figure>
+            </article>
+            <article> <!-- DETALHES DO PRODUTO -->
+                <h2>Descrição</h2>
+                <p>Camisa de gola redonda. Manga ampla com punho. Bolso de patch no peito. Detalhe de bordados tom sobre tom nos punhos e no bolso. Fecho frontal com botões ocultos por vista.
+                <br>
+                Fabricado na China.
+                </p>
+                <p>R$279,00</p>
+            </article>
+        </section>
+        <hr>
+        <section> <!-- COMPRA-->
+            <h2>Faça sua compra</h2>
+            <!-- COR DA CAMISA -->
+            <form autocomplete="on">
+                <article>
+                    <fieldset>
+                        <legend>Cor</legend>
+                        <label for="cor">Escolha a cor do produto:</label>
+                        <input type="color" id="cor" list="cores-zara" value="#502c2c">
+                        <!-- REVISAR COM O GUI -->
+                        <datalist id="cores-zara">
+                            <option value="#502c2c">Marrom</option>
+                            <option value="#ffffff">Branco</option>
+                            <option value="#000000">Preto</option>
+                        </datalist>
+                    </fieldset>
+                </article>
+                <br>
+                <!-- TAMANHO -->
+                <article>
+                    <fieldset>
+                        <legend>Tamanho</legend>
+                        <input type="radio" name="tamanho" id="itamxp"> XP
+                        <input type="radio" name="tamanho" id="itamp"> P
+                        <input type="radio" name="tamanho" id="itamm"> M
+                        <input type="radio" name="tamanho" id="itamg"> G
+                        <input type="radio" name="tamanho" id="itamxg"> XG
+                        <input type="radio" name="tamanho" id="itamxxg"> XXG
+                    </fieldset>
+                </article>
+                <br>
+                <article> <!-- ENTREGA -->
+                    <fieldset>
+                        <legend>Informações de entrega</legend>
+                        <label for="inome">Nome do destinatário:</label>
+                        <input type="text" name="nome" id="inome" placeholder="Adriana Lima" required>
+                        <br> <br>
+                        <label for="itel">Telefone:</label>
+                        <input type="number" name="tel" id="itel" placeholder="99999-9999">
+                        <br> <br>
+                        <label for="iendereco">Endereço:</label>
+                        <input type="text" name="endereco" id="iendereco" placeholder="Rua Exemplo, 99" required>
+                        <br> <br>
+                        <label for="icep">CEP:</label>
+                        <input type="number" name="cep" id="icep" placeholder="11111-000" required>
+                    </fieldset>
+                </article>
+                <br>
+                <article> <!--PAGAMENTO -->
+                    <fieldset>
+                        <legend>Informações de pagamento</legend>
+                        <label for="inomec">Nome do cartão:</label>
+                        <input type="text" name="nomec" id="inomec" placeholder="Adriana Lima dos Santos">
+                        <br> <br>
+                        <label for="inumcartao">Número do cartão:</label>
+                        <input type="number" name="numcartao" id="inumcartao" placeholder="0000 0000 0000 0000">
+                        <br> <br>
+                        <label for="icod">Código de verificação:</label>
+                        <input type="number" name="cod" id="icod" placeholder="111">
+                    </fieldset>
+                </article>
+                <pre><input type="submit" value="Fazer Compra" id="botao" onclick="mostrar()"> <input type="reset" value="Limpar" id="botao"></pre>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <br>
+        <nav>
+            <a href="https://www.instagram.com/zara/" target="_blank"><img src="./imagens/icones/instagram.png" alt="Icone do Instagram"></a>
+            <a href="https://www.tiktok.com/@zara" target="_blank"><img src="./imagens/icones/tiktok.png" alt="Icone do TikTok"></a>
+            <a href="https://www.youtube.com/user/zara" target="_blank"><img src="./imagens/icones/youtube.png" alt="Icone do YouTube"></a>
+        </nav>
+        <p id="copy">&copy; All rights reserved</p>
+        <br>
+    </footer>
+    <script>
+        function mostrar(){
+            alert('Parabéns pela sua compra!!')
+        }
+    </script>
+</body>
+</html>
